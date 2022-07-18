@@ -1,0 +1,33 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../yoloData  # dataset root dir
+train: images  # train images (relative to 'path') 128 images
+val: images  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 14  # number of classes
+names: ["k_brss",
+"k_cacte",
+"k_hon",
+"k_honlim",
+"k_mt_RO",
+"k_nodent",
+"k_total",
+"v_brss",
+"v_cacte",
+"v_hon",
+"v_honlim",
+"v_mt_RO",
+"v_nodent",
+"v_total"]  # class names
+
+# Download script/URL (optional)
+#download: https://ultralytics.com/assets/coco128.zip
